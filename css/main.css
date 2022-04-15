@@ -183,13 +183,27 @@ li{
 
 
 }
-.first-list__item::before{
-    color: #fff;
-    position: fixed;
-    top: 43px;
-    left: 95px;
-    content: "23:48";
+.time{
+    display: block;
+    position: absolute;
+    top: 31px;
+    left: calc(14%);
     font-size: 14px;
+    text-shadow: none;
+}
+.sectime{
+    position: absolute;
+    top: 31px;
+    left: calc(14%);
+    font-size: 14px;
+    text-shadow: none;
+}
+.thirdtime{
+    position: absolute;
+    top: 31px;
+    left: calc(14%);
+    font-size: 14px;
+    text-shadow: none;
 }
 .first-list__item::after{
     position: absolute;
@@ -212,10 +226,12 @@ li{
     position: relative;
     overflow:auto;
 }
-.first-list::before{
-    position: fixed;
-    left: 402px;
-    top: 43px;
+
+.span1{
+    display: block;
+    position: absolute;
+    right:100px;
+    top:32px;
     content: "";
     z-index: 100000000;
     background-image: url("../images/wf1.png");
@@ -224,7 +240,32 @@ li{
     height: 25px;
     background-size: 100%;
 }
-
+.span2{
+    display: block;
+    position: absolute;
+    top: 32px;
+    right: 100px;
+    content: "";
+    z-index: 100000000;
+    background-image: url("../images/wf1.png");
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 25px;
+    background-size: 100%;
+}
+.span3{
+    display: block;
+    position: absolute;
+    top: 32px;
+    right: 100px;
+    content: "";
+    z-index: 100000000;
+    background-image: url("../images/wf1.png");
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 25px;
+    background-size: 100%;
+}
 .first-id{
     padding: 10px;
     width: 40px;
@@ -351,18 +392,7 @@ li{
     padding-left: 53px;
     border: none;
 }
-.secound-list::before{
-    position: fixed;
-    left: calc(50% + 126px);
-    top: 43px;
-    content: "";
-    z-index: 100000000;
-    background-image: url("../images/wf1.png");
-    background-repeat: no-repeat;
-    width: 19px;
-    height: 25px;
-    background-size: 100%;
-}
+
 
 .post-item{
     width: 93%;
@@ -399,15 +429,6 @@ li{
 .post-title{
     text-shadow: 0 0 20px blue;
 }
-.post-title::before{
-    color: #fff;
-    position: fixed;
-    top: 43px;
-    left: calc(50% - 180px);
-    content: "23:48";
-    font-size: 14px;
-    text-shadow: none;
-}
 .post-text{
     text-shadow: 0 0 20px #F73195;
 }
@@ -420,18 +441,7 @@ li{
     padding-left: 53px;
     border: none;
 }
-.third-list::before{
-    position: fixed;
-    left: calc(80% + 157px);
-    top: 43px;
-    content: "";
-    z-index: 100000000;
-    background-image: url("../images/wf1.png");
-    background-repeat: no-repeat;
-    width: 19px;
-    height: 25px;
-    background-size: 100%;
-}
+
 .last-item{
     position: relative;
     width: 80%;
@@ -462,15 +472,7 @@ li{
 .last-title{
     text-shadow: 0 0 20px blue;
 }
-.last-title::before{
-    color: #fff;
-    position: fixed;
-    top: 43px;
-    left: calc(80% - 149px);
-    content: "23:48";
-    font-size: 14px;
-    text-shadow: none;
-}
+
 .last-gmail{
     text-decoration: none;
     color: #85C9E8;

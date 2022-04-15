@@ -3,7 +3,36 @@ const secoundList = document.querySelector(".secound-list");
 const thirdList = document.querySelector(".third-list");
 const loaderImg = document.querySelector(".loading-img");
 const loaderLast = document.querySelector(".loading-img-last");
+const elFirstDiv = document.querySelector(".first-block")
+const elSecoundDiv = document.querySelector(".secound-block")
+const elThirdDiv = document.querySelector(".third-block")
 
+const time = document.createElement("p");
+const secTime = document.createElement("p");
+const thirdTime = document.createElement("p");
+
+time.classList.add("time");
+secTime.classList.add("sectime");
+thirdTime.classList.add("thirdtime");
+time.textContent = "23:48";
+secTime.textContent = "23:48";
+thirdTime.textContent = "23:48";
+
+const span1 = document.createElement("span");
+const span2 = document.createElement("span");
+const span3 = document.createElement("span");
+
+span1.classList.add("span1");
+span2.classList.add("span2");
+span3.classList.add("span3");
+
+elFirstDiv.appendChild(span1);
+elSecoundDiv.appendChild(span2);
+elThirdDiv.appendChild(span3);
+
+elFirstDiv.appendChild(time);
+elSecoundDiv.appendChild(secTime);
+elThirdDiv.appendChild(thirdTime);
 
 async function exam() {
     fetch('https://jsonplaceholder.typicode.com/users')
@@ -53,7 +82,7 @@ async function exam() {
 
                 firstWebSite.textContent = fistItem.website;
                 firstWebSite.classList.add("first-website");
-                firstWebSite.setAttribute("href" , "#")
+                firstWebSite.setAttribute("href" , "#");
 
                 item.appendChild(basicId)
                 item.appendChild(firstTitle);
