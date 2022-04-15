@@ -1,7 +1,8 @@
 const firstList = document.querySelector(".first-list");
 const secoundList = document.querySelector(".secound-list");
 const thirdList = document.querySelector(".third-list");
-
+const loaderImg = document.querySelector(".loading-img");
+const loaderLast = document.querySelector(".loading-img-last");
 
 
 async function exam() {
@@ -69,7 +70,7 @@ async function exam() {
 
             }
             firstList.addEventListener("click" , evt => {
-
+                loaderImg.classList.add("lastBlock")
                 if(evt.target.closest("li")){
 
                     let  arrey = []
@@ -124,6 +125,7 @@ async function exam() {
 
                     })
                     secoundList.addEventListener("click" , evt => {
+                        loaderLast.classList.add("block")
                         if(evt.target.closest(".post-item")){
                             const thirdArr = [];
 

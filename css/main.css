@@ -16,6 +16,22 @@ body{
     color: #fff;
     font-family: sans-serif;
 }
+.loading-img{
+    position: absolute;
+    top: 32%;
+    left: 28%;
+    display: none;
+}
+.loading-img-last{
+    position: absolute;
+    top: 32%;
+    left: 28%;
+    display: none;
+}
+.block{
+    display: block;
+}
+
 ul{
     margin: 0;
     padding: 0;
@@ -63,6 +79,7 @@ li{
 }
 
 .secound-block{
+    position: relative;
     width: 600px;
     height: 700px;
     overflow-y: hidden;
@@ -76,6 +93,7 @@ li{
 }
 
 .third-block{
+    position: relative;
     width: 600px;
     height: 700px;
     overflow-y: hidden;
