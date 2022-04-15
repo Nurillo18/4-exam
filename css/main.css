@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 30px;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #fff;
+    font-family: sans-serif;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li{
+    padding: 20px;
+}
+.all-block{
+    display: flex;
+    width: 100%;
+}
+.secound-block{
+    width: 600px;
+}
+.post-item{
+    border: 1px solid black;
+}
+
+.first-email{
+    display: block;
+    color: red;
+}
+.first-website{
+    display: block;
+}
+
+.last-item{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+.first-block{
+    width: 600px;
+    height: 700px;
+    overflow-y: hidden;
+    background-image: url("../images/divbg.jpg");
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-size: 100% calc(100%);
+    background-position: top center;
+    padding-top: 47px;
+
+}
+
+.secound-block{
+    width: 600px;
+    height: 700px;
+    overflow-y: hidden;
+    background-image: url("../images/divbg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% calc(100%);
+    background-position: top center;
+    padding-top: 47px;
+    border-radius: 50px;
+
+}
+
+.third-block{
+    width: 600px;
+    height: 700px;
+    overflow-y: hidden;
+    background-image: url("../images/divbg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% calc(100%);
+    background-position: top center;
+    padding-top: 47px;
+    border-radius: 50px;
+
+}
+.first-list__item{
+    position: relative;
+    padding-left: 71px;
+    padding-right: 36px;
+    position: relative;
+    cursor: pointer;
+
+}
+.first-list__item::after{
+    position: absolute;
+    bottom: 0;
+    left: 58px;
+    border-radius: 24px;
+    display: block;
+    content: "";
+    width:79%;
+    height: 0.1px;
+    background-color: #85C9E8;
+    opacity: 0.8;
+}
+
+.first-list__item:nth-child(1){
+  padding-top: 50px;
+}
+.first-list{
+    height: 627px;
+    position: relative;
+    overflow:auto;
+}
+
+.first-id{
+    padding: 10px;
+    width: 40px;
+    text-align: center;
+    background-image: url("../images/btnbg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    animation: anime 7s ease-in;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+@keyframes anime {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(900deg);
+    }
+}
+.title-fr{
+    font-size: 24px;
+    text-shadow: 0 0 20px blue;
+    margin-bottom: 5px;
+}
+
+.first-lastname{
+    font-size: 15px;
+    text-shadow: 0 0 20px #F73195;
+    margin-bottom: 5px;
+}
+.first-company{
+    font-size: 17px;
+    text-shadow: 0 0 20px blue;
+    margin-bottom: 5px;
+}
+
+.first-time{
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+    color: #85C9E8;
+    margin-bottom: 8px;
+}
+.first-time::after{
+    position: absolute;
+    top: -12px;
+    right: 48px;
+    display: block;
+    content: '';
+    background-image: url("../images/tel2.png");
+    background-repeat: no-repeat;
+    width:60px;
+    height:60px;
+    background-size:100% ;
+}
+.first-email{
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: pink;
+    text-shadow: 0 0 20px #F73195;
+}
+.first-email::after{
+    position: absolute;
+    top: -91px;
+    right: 103px;
+    content: "";
+    background-image: url("../images/gmai.png");
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: 100%;
+}
+.first-location{
+    position: relative;
+    text-decoration: none;
+    color: #85C9E8;
+    text-shadow: 0 0 20px blue;
+
+}
+
+.first-location:after{
+    position: absolute;
+    top: -4px;
+    right: -213px;
+    content: "";
+    background-image: url("../images/local1.png");
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: 100%;
+}
+
+.first-website{
+    display: block;
+    position: relative;
+    margin-top: 8px;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 0 0 20px #F73195;
+}
+.first-website::after{
+    position: absolute;
+    top: -1px;
+    right: 66px;
+    content: "";
+    background-image: url("../images/world2.png");
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: 100%;
+}
+
+.secound-list{
+    height: 627px;
+    position: relative;
+    overflow:auto;
+    width: 100%;
+    padding-left: 53px;
+    border: none;
+}
+.post-item{
+    width: 93%;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.post-item::after{
+    position: absolute;
+    bottom: 0;
+    left: 6px;
+    border-radius: 24px;
+    display: block;
+    content: "";
+    width:96%;
+    height: 0.1px;
+    background-color: #85C9E8;
+    opacity: 0.8;
+}
+.post-title{
+    text-shadow: 0 0 20px blue;
+}
+.post-text{
+    text-shadow: 0 0 20px #F73195;
+}
+
+.third-list{
+    height: 627px;
+    position: relative;
+    overflow:auto;
+    width: 100%;
+    padding-left: 53px;
+    border: none;
+}
+.last-item{
+    width: 90%;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+.last-item::after{
+    position: absolute;
+    bottom: 0;
+    left: 6px;
+    border-radius: 24px;
+    display: block;
+    content: "";
+    width:98%;
+    height: 0.1px;
+    background-color: #85C9E8;
+    opacity: 0.8;
+}
+
+.last-title{
+    text-shadow: 0 0 20px blue;
+}
+.last-gmail{
+    text-decoration: none;
+    color: #85C9E8;
+    text-shadow: 0 0 10px #F73195;
+}
+.last-text{
+    text-shadow: 0 0 20px blue;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: blue;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+  }
